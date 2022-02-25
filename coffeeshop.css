@@ -1,0 +1,1199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    line-height: 4rem;
+    position: relative;
+}
+
+header nav span {
+    margin-top: 1rem;
+}
+
+header nav span img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 20rem;
+}
+
+header ul {
+    margin-top: 3rem;
+    position: absolute;
+    z-index: 2;
+}
+
+header ul li {
+    display: inline-flex;
+}
+
+header ul li a {
+    padding: 0.8rem 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+header ul li a:hover {
+    box-shadow: 0 0 0 0.3rem cyan, 0 0 0 0.3rem cyan;
+    border-radius: 3rem;
+    color: cyan;
+}
+
+.koi {
+    font-size: 2rem;
+    color: white;
+    margin-top: 3.5rem;
+}
+
+.koi div {
+    padding: 0rem 2rem;
+}
+
+#koi-1 {
+    display: none;
+}
+
+.kot {
+    background-image: url("IMG_20220211_113908.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80rem;
+    position: relative;
+}
+
+.kot-1 h1 {
+    color: white;
+    position: absolute;
+    top: 4rem;
+    right: 8rem;
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.kot-1 p {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    position: absolute;
+    top: 17rem;
+    right: 13rem;
+}
+
+.btn {
+    color: white;
+    background-color: orange;
+    border-radius: 3rem;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 40rem;
+    right: 35rem;
+}
+
+.ko-1 {
+    background-color: black;
+    height: 5rem;
+}
+
+.ko-1 h1 {
+    color: white;
+    text-align: center;
+    font-size: 4.5rem;
+    text-transform: capitalize;
+}
+
+.ko-1 h1 span {
+    color: gold;
+    padding: 0 1rem;
+}
+
+.kot-sub-1 {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+}
+
+.kot-2 {
+    width: 80rem;
+    height: 60rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.kot-3 img {
+    height: 59rem;
+    width: 40rem;
+}
+
+.kot-4 {
+    background-color: black;
+    width: 39rem;
+    height: 59rem;
+}
+
+.kot-4 h2 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: white;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.kot-4 p {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: white;
+    padding-top: 7rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.rock-1 {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+}
+
+.choice-1 {
+    width: 85rem;
+    height: 60rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    background-color: black;
+}
+
+.choice-2 {
+    width: 25rem;
+    height: 25rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+}
+
+.choice-2:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.choice-2 img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 10rem;
+}
+
+.choice-2 h2 {
+    font-size: 1.7rem;
+    color: white;
+    background-color: gold;
+    text-transform: capitalize;
+    border-radius: 1rem;
+}
+
+.temp-0 {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+}
+
+.tempr {
+    width: 85rem;
+    height: 60rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    background-color: black;
+}
+
+.temp-1 {
+    width: 25rem;
+    height: 25rem;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    border: solid 0.3rem lightgray;
+}
+
+.temp-1 .temp-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+}
+
+.temp-1 .temp-2 i {
+    font-size: 1.5rem;
+    color: yellow;
+    text-align: center;
+}
+
+.temp-1 .temp-3 {
+    text-align: center;
+}
+
+.temp-1 .temp-3 img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 20rem;
+}
+
+.temp-1 .lop-1 {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.temp-1 .lop-1 h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: yellow;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.temp-1 .lop-1 div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 0.5rem;
+}
+
+.temp-1 .lop-1 div i {
+    font-size: 1.5rem;
+    color: yellow;
+    text-align: center;
+}
+
+.temp-1:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.tap-1 {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+}
+
+.tap-2 {
+    width: 85rem;
+    height: 25rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.tmp-1 {
+    width: 25rem;
+    height: 25rem;
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    border: solid 0.3rem lightgrey;
+}
+
+.tmp-2 {
+    text-align: center;
+}
+
+.tmp-2 img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 20rem;
+}
+
+.tmp-1 h3 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.tmp-3 P {
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+}
+
+.nok-0 {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+}
+
+.nok-1 {
+    width: 80rem;
+    height: 45rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 4rem;
+}
+
+.map {
+    width: 40rem;
+    height: 40rem;
+}
+
+.nok-0 form {
+    width: 40rem;
+    height: 40rem;
+    text-align: center;
+}
+
+.nok-0 form h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    color: yellow;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.nok-0 form .inputbox {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: black;
+    border: 0.5rem solid lightgray;
+}
+
+.nok-0 form .inputbox span {
+    color: white;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.nok-0 form .inputbox input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: black;
+    text-transform: none;
+    background: none;
+}
+
+.nok-0 form .bt {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 400;
+    background-color: orange;
+}
+
+.nok-0 form .bt:hover {
+    background-color: orangered;
+}
+
+.blog-1 {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+}
+
+.blog-2 {
+    width: 100rem;
+    height: 50rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    background-color: black;
+    padding-top: 3rem;
+}
+
+.blog-3 {
+    width: 30rem;
+    height: 40rem;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 2fr;
+    border: solid 0.3rem grey;
+}
+
+.blog-3:hover {
+    transform: scale(1.1);
+}
+
+.blog-3 div img {
+    width: 29.5rem;
+    height: 22rem;
+}
+
+.blog-3 h2 {
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.blog-3 h3 {
+    font-size: 2rem;
+    background-color: black;
+    color: yellow;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 0.2rem;
+}
+
+.blog-3 p {
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.blog-3 .btn-4 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding-top: 0.2rem;
+}
+
+.blog-3 .btn-4:hover {
+    color: cyan;
+}
+
+.footer {
+    background-color: black;
+    text-align: center;
+}
+
+.footer .share {
+    padding: 1rem 0rem;
+}
+
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 10rem;
+    line-height: 5rem;
+    font-size: 3rem;
+    color: white;
+    border: 0.1rem solid lightgrey;
+    margin: 3rem;
+}
+
+.footer .share a:hover {
+    background-color: lightskyblue;
+    transform: scale(1.1);
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0rem;
+    gap: 1rem;
+    text-transform: uppercase;
+}
+
+.footer .links a {
+    padding: 0.7rem 2rem;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.footer .links a:hover {
+    box-shadow: 0 0 0 0.2rem cyan, 0 0 0 0.2rem cyan;
+    border-radius: 10rem;
+}
+
+.credit {
+    color: white;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.credit span {
+    color: gold;
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    nav ul li a {
+        padding: 0rem 1rem;
+        font-size: 1.5rem;
+    }
+    .kot-2 {
+        width: 70rem;
+        height: 55rem;
+    }
+    .kot-3 img {
+        height: 54rem;
+        width: 35em;
+    }
+    .kot-4 {
+        width: 34rem;
+        height: 54rem;
+    }
+    .kot-4 p {
+        padding-top: 3rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .choice-1 {
+        width: 70rem;
+        height: 50rem;
+    }
+    .choice-2 {
+        width: 20rem;
+        height: 20rem;
+    }
+    .tempr {
+        width: 70rem;
+        height: 50rem;
+        grid-gap: 3rem;
+    }
+    .temp-1 {
+        width: 20rem;
+        height: 20rem;
+    }
+    .temp-1 .temp-3 img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 20rem;
+    }
+    .tap-2 {
+        width: 70rem;
+        height: 25rem;
+    }
+    .tmp-1 {
+        width: 20rem;
+        height: 25rem;
+    }
+    .tmp-2 img {
+        width: 10rem;
+        height: 10rem;
+    }
+    .nok-1 {
+        width: 70rem;
+        height: 45rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 4rem;
+    }
+    .map {
+        width: 35rem;
+        height: 40rem;
+    }
+    .nok-0 form {
+        width: 34.5rem;
+        height: 40rem;
+        text-align: center;
+    }
+    .blog-2 {
+        width: 70rem;
+        height: 45rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 2rem;
+        background-color: black;
+        padding-top: 3rem;
+    }
+    .blog-3 {
+        width: 22rem;
+        height: 38rem;
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr 2fr;
+        border: solid 0.3rem grey;
+    }
+    .blog-3:hover {
+        transform: scale(1.1);
+    }
+    .blog-3 div img {
+        width: 21.5rem;
+        height: 22rem;
+    }
+}
+
+@media (min-width:425px) and (max-width:768px) {
+    header nav span img {
+        height: 5rem;
+        width: 5rem;
+        border-radius: 20rem;
+    }
+    nav ul {
+        margin-top: 2rem;
+    }
+    nav ul li a {
+        padding: 0rem 0.5rem;
+        font-size: 1rem;
+    }
+    .koi {
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+    .koi div {
+        padding: 0rem 0.5rem;
+    }
+    .kot-2 {
+        width: 40rem;
+        height: 40rem;
+    }
+    .kot-3 img {
+        height: 39rem;
+        width: 20rem;
+    }
+    .kot-4 {
+        width: 19rem;
+        height: 39rem;
+    }
+    .kot-4 h2 {
+        font-size: 2rem;
+    }
+    .kot-4 p {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .choice-1 {
+        width: 50rem;
+        height: 70rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 3rem;
+    }
+    .choice-2 {
+        width: 20rem;
+        height: 20rem;
+    }
+    .tempr {
+        width: 45rem;
+        height: 70rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+    .temp-1 {
+        width: 20rem;
+        height: 20rem;
+    }
+    .temp-1 .temp-3 img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 20rem;
+    }
+    .tap-2 {
+        width: 25rem;
+        height: 100rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .tmp-1 {
+        width: 25rem;
+        height: 25rem;
+        display: grid;
+        grid-template-rows: 2fr 1fr 2fr;
+        border: solid 0.3rem lightgrey;
+    }
+    .tmp-2 {
+        text-align: center;
+    }
+    .tmp-2 img {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 20rem;
+    }
+    .nok-1 {
+        width: 30rem;
+        height: 85rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+        padding-top: 4rem;
+    }
+    .map {
+        width: 30rem;
+        height: 40rem;
+    }
+    .nok-0 form {
+        width: 30rem;
+        height: 40rem;
+        text-align: center;
+    }
+    .blog-2 {
+        width: 25rem;
+        height: 125rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 2rem;
+        background-color: black;
+        padding-top: 3rem;
+    }
+    .blog-3 {
+        width: 22rem;
+        height: 38rem;
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr 2fr;
+        border: solid 0.3rem grey;
+    }
+    .blog-3:hover {
+        transform: scale(1.1);
+    }
+    .blog-3 div img {
+        width: 21.5rem;
+        height: 22rem;
+    }
+}
+
+@media (min-width:375px) and (max-width:425px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav span img {
+        height: 6rem;
+        width: 6rem;
+    }
+    nav ul {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        top: 5.7rem;
+        right: 0rem;
+    }
+    nav ul li {
+        width: 20rem;
+    }
+    nav ul li a {
+        font-size: 2rem;
+        text-align: center;
+        box-shadow: none;
+    }
+    nav ul li a:hover {
+        box-shadow: none;
+    }
+    .koi {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        display: inline-flex;
+    }
+    .koi div {
+        padding: 0rem 1.5rem;
+        font-size: 1.8rem;
+    }
+    #koi-1 {
+        display: block;
+    }
+    .kot-1 h1 {
+        font-size: 3.5rem;
+    }
+    .kot-1 p {
+        font-size: 2.5rem;
+    }
+    .btn {
+        right: 20rem;
+    }
+    .kot-2 {
+        width: 25rem;
+        height: 60rem;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+    .kot-3 img {
+        height: 30rem;
+        width: 24rem;
+    }
+    .kot-4 {
+        width: 24rem;
+        height: 29rem;
+    }
+    .kot-4 h2 {
+        font-size: 2rem;
+    }
+    .kot-4 p {
+        font-size: 1.5rem;
+        padding: 1rem 1rem 0rem 1rem;
+    }
+    .choice-1 {
+        width: 25rem;
+        height: 170rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 3rem;
+    }
+    .tempr {
+        width: 25rem;
+        height: 170rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(6, 1fr);
+        justify-content: center;
+    }
+    .temp-1 {
+        width: 20rem;
+        height: 20rem;
+    }
+    .temp-1 .temp-3 img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 20rem;
+    }
+    .tap-2 {
+        width: 25rem;
+        height: 100rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .nok-1 {
+        width: 30rem;
+        height: 85rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+        padding-top: 4rem;
+    }
+    .map {
+        width: 30rem;
+        height: 40rem;
+    }
+    .nok-0 form {
+        width: 30rem;
+        height: 40rem;
+        text-align: center;
+    }
+    .blog-2 {
+        width: 25rem;
+        height: 125rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 2rem;
+        background-color: black;
+        padding-top: 3rem;
+    }
+    .blog-3 {
+        width: 22rem;
+        height: 38rem;
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr 2fr;
+        border: solid 0.3rem grey;
+    }
+    .blog-3:hover {
+        transform: scale(1.1);
+    }
+    .blog-3 div img {
+        width: 21.5rem;
+        height: 22rem;
+    }
+}
+
+@media (min-width:320px) and (max-width:375px) {
+    header nav span img {
+        height: 5rem;
+        width: 5rem;
+        border-radius: 20rem;
+    }
+    nav ul {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        top: 4.7rem;
+        right: 0rem;
+    }
+    nav ul li {
+        width: 15rem;
+    }
+    nav ul li a {
+        font-size: 2rem;
+        text-align: center;
+        box-shadow: none;
+    }
+    nav ul li a:hover {
+        box-shadow: none;
+    }
+    .kot-1 h1 {
+        top: 4rem;
+        right: 8rem;
+        font-size: 3rem;
+    }
+    .kot-1 p {
+        font-size: 2rem;
+        top: 17rem;
+        right: 13rem;
+    }
+    .btn {
+        right: 20rem;
+    }
+    .koi {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        display: inline-flex;
+    }
+    .koi div {
+        padding: 0rem 1.5rem;
+        font-size: 1.8rem;
+    }
+    #koi-1 {
+        display: block;
+    }
+    .kot-2 {
+        width: 25rem;
+        height: 60rem;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+    .kot-3 img {
+        height: 30rem;
+        width: 24rem;
+    }
+    .kot-4 {
+        width: 24rem;
+        height: 29rem;
+    }
+    .kot-4 h2 {
+        font-size: 2rem;
+    }
+    .kot-4 p {
+        font-size: 1.5rem;
+        padding: 1rem 1rem 0rem 1rem;
+    }
+    .choice-1 {
+        width: 25rem;
+        height: 170rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 3rem;
+    }
+    .tempr {
+        width: 25rem;
+        height: 170rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .temp-1 {
+        width: 20rem;
+        height: 20rem;
+    }
+    .temp-1 .temp-3 img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 20rem;
+    }
+    .tap-2 {
+        width: 25rem;
+        height: 100rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .nok-1 {
+        width: 30rem;
+        height: 85rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+        padding-top: 4rem;
+    }
+    .map {
+        width: 30rem;
+        height: 40rem;
+    }
+    .nok-0 form {
+        width: 30rem;
+        height: 40rem;
+        text-align: center;
+    }
+    .blog-2 {
+        width: 25rem;
+        height: 125rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 2rem;
+        background-color: black;
+        padding-top: 3rem;
+    }
+    .blog-3 {
+        width: 22rem;
+        height: 38rem;
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr 2fr;
+        border: solid 0.3rem grey;
+    }
+    .blog-3 div img {
+        width: 21.5rem;
+        height: 22rem;
+    }
+}
+
+@media (min-width:0px) and (max-width:320px) {
+    header nav span img {
+        height: 5rem;
+        width: 5rem;
+        border-radius: 20rem;
+    }
+    nav ul {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        top: 4.7rem;
+        right: 0rem;
+    }
+    nav ul li {
+        width: 100%;
+    }
+    nav ul li a {
+        font-size: 2rem;
+        text-align: center;
+    }
+    nav ul li a:hover {
+        box-shadow: none;
+    }
+    .kot-1 h1 {
+        top: 4rem;
+        right: 8rem;
+        font-size: 3rem;
+    }
+    .kot-1 p {
+        font-size: 2rem;
+        top: 17rem;
+        right: 13rem;
+    }
+    .btn {
+        right: 20rem;
+    }
+    .koi {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        display: inline-flex;
+    }
+    .koi div {
+        padding: 0rem 1.5rem;
+        font-size: 1.8rem;
+    }
+    #koi-1 {
+        display: block;
+    }
+    .kot-2 {
+        width: 20rem;
+        height: 65rem;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+    .kot-3 img {
+        height: 20rem;
+        width: 19rem;
+    }
+    .kot-4 {
+        width: 19rem;
+        height: 29rem;
+    }
+    .kot-4 h2 {
+        font-size: 2rem;
+    }
+    .kot-4 p {
+        font-size: 1.5rem;
+        padding: 1rem 1rem 0rem 1rem;
+    }
+    .choice-1 {
+        width: 22rem;
+        height: 170rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 3rem;
+    }
+    .tempr {
+        width: 25rem;
+        height: 170rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(6, 1fr);
+        justify-content: center;
+    }
+    .temp-1 {
+        width: 20rem;
+        height: 20rem;
+    }
+    .temp-1 .temp-3 img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 20rem;
+    }
+    .tap-2 {
+        width: 25rem;
+        height: 100rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .nok-1 {
+        width: 25rem;
+        height: 80rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+        padding-top: 4rem;
+    }
+    .map {
+        width: 25rem;
+        height: 30rem;
+    }
+    .nok-0 form {
+        width: 25rem;
+        height: 30rem;
+        text-align: center;
+    }
+    .blog-2 {
+        width: 25rem;
+        height: 130rem;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 2rem;
+        justify-content: center;
+    }
+    .blog-3 {
+        width: 22rem;
+        height: 38rem;
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr 2fr;
+        border: solid 0.3rem grey;
+    }
+    .blog-3 div img {
+        width: 21.5rem;
+        height: 22rem;
+    }
+}
